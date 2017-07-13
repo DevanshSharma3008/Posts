@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity  {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        ApiInterface apiInterface =  retrofit.create(ApiInterface.class);       // implements the interface
+        ApiInterface apiInterface =  retrofit.create(ApiInterface.class);
+        // implements the interface
         Call<ArrayList<User>> call  =  apiInterface.getPosts();
 
         // apiInterface.getPost(1, 3);
